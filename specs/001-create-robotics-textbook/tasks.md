@@ -49,8 +49,8 @@
 
 ## Phase 6: Capstone Project Development
 
-- [ ] T601 [US4] Write Capstone Architecture in `content/capstone-architecture.md`
-- [ ] T602 [US4] Write Step-by-Step Capstone Implementation in `content/capstone-implementation.md`
+- [X] T601 [US4] Write Capstone Architecture in `content/capstone-architecture.md`
+- [X] T602 [US4] Write Step-by-Step Capstone Implementation in `content/capstone-implementation.md`
 
 **CHECKPOINT 6 — Capstone Review**
 
