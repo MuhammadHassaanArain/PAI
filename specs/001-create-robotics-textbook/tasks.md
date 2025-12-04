@@ -64,8 +64,8 @@
 
 ## Phase 8: Deployment & Demo
 
-- [ ] T801 Deploy Book to GitHub Pages / Vercel
-- [ ] T802 Deploy Backend APIs
-- [ ] T803 Record 90-Second Demo Video
+- [X] T801 Deploy Book to GitHub Pages / Vercel
+- [X] T802 Deploy Backend APIs
+- [X] T803 Record 90-Second Demo Video
 
 **CHECKPOINT 8 — Final Submission Review**
