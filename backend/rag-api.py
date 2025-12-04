@@ -2,9 +2,11 @@ import os
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
-from qdrant_client import QdrantClient
+from qdrant_client import QdrantClient, models # models added for ScoredPoint
 from qdrant_client.http.models import Filter, FieldCondition, MatchValue
 import google.generativeai as genai
+
+from backend.src.models.user_profile import StudentProfile, ProgrammingLevel, AIKnowledgeLevel, HardwareAvailability, LearningSpeedPreference # Import StudentProfile
 
 # --- Configuration ---
 QDRANT_HOST = os.getenv("QDRANT_HOST", "localhost")
@@ -33,6 +35,7 @@ class ChatQuery(BaseModel):
     student_id: Optional[str] = None
     query_text: str = Field(..., min_length=1, max_length=1000)
     context: Optional[ChatContext] = None
+    student_profile: Optional[StudentProfile] = None # Added student_profile to ChatQuery
 
 class Citation(BaseModel):
     chapter_id: str
@@ -97,15 +100,27 @@ class SafetyRefusalAgent:
         return None # No refusal needed
 
 class ExplanationAgent:
-    def generate_response(self, query_text: str, context_chunks: List[str], selected_text: Optional[str] = None) -> str:
+    def generate_response(self, query_text: str, context_chunks: List[str], selected_text: Optional[str] = None, student_profile: Optional[StudentProfile] = None) -> str: # Added student_profile
         full_context = "\n\n".join(context_chunks)
         
+        personalization_instruction = ""
+        if student_profile:
+            personalization_instruction = f"""
+            Adapt your response to a student with the following profile:
+            - Programming Level: {student_profile.programming_level.value if student_profile.programming_level else 'unknown'}
+            - AI Knowledge Level: {student_profile.ai_knowledge_level.value if student_profile.ai_knowledge_level else 'unknown'}
+            - Learning Speed Preference: {student_profile.learning_speed_preference.value if student_profile.learning_speed_preference else 'unknown'}
+            
+            Focus on {student_profile.learning_speed_preference.value} pace, use analogies suitable for a {student_profile.programming_level.value} programmer, and tailor explanations based on {student_profile.ai_knowledge_level.value} AI knowledge.
+            """
+
         # Adjust prompt based on whether selected_text was provided
         if selected_text:
             prompt = f"""You are an AI assistant for a Physical AI and Humanoid Robotics textbook.
             Answer the following question STRICTLY based on the SELECTED TEXT provided,
             which is also contained within the Context. If the question cannot be answered from
             the SELECTED TEXT, state "I cannot answer this question based on the selected text."
+            {personalization_instruction}
             
             Selected Text: {selected_text}
             
@@ -119,6 +134,7 @@ class ExplanationAgent:
             prompt = f"""You are an AI assistant for a Physical AI and Humanoid Robotics textbook.
             Answer the following question STRICTLY based on the provided Context from the textbook.
             If the question cannot be answered from the Context, state "I cannot answer this question based on the provided textbook content."
+            {personalization_instruction}
             
             Question: {query_text}
             
@@ -287,7 +303,7 @@ async def chat_query(query: ChatQuery):
         )
 
     # 4. Explanation Agent - get initial LLM response
-    initial_llm_response = explanation_agent.generate_response(query.query_text, context_chunks_text, query.context.selected_text)
+    initial_llm_response = explanation_agent.generate_response(query.query_text, context_chunks_text, query.context.selected_text, query.student_profile) # Pass student_profile
 
     # 5. Verification Agent - verify and get citation
     verified_response, citation = verification_agent.verify_and_cite(
