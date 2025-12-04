@@ -56,9 +56,9 @@
 
 ## Phase 7: RAG Chatbot Development
 
-- [ ] T701 Implement Vector Ingestion Pipeline in `backend/rag-ingest.py`
-- [ ] T702 Implement RAG Query API in `backend/rag-api.py`
-- [ ] T703 Implement Selected-Text-Only Mode in `backend/rag-api.py`
+- [X] T701 Implement Vector Ingestion Pipeline in `backend/rag-ingest.py`
+- [X] T702 Implement RAG Query API in `backend/rag-api.py`
+- [X] T703 Implement Selected-Text-Only Mode in `backend/rag-api.py`
 
 **CHECKPOINT 7 — RAG Review**
 
