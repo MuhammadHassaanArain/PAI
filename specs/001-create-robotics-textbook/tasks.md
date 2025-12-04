@@ -9,9 +9,9 @@
 
 ## Phase 1: Book Architecture & Outline (60–90 minutes)
 
-- [ ] T101 Define full table of contents in `specs/001-create-robotics-textbook/toc.md`
-- [ ] T102 Define chapter template in `specs/001-create-robotics-textbook/chapter-template.md`
-- [ ] T103 Define capstone project scope in `specs/001-create-robotics-textbook/capstone-scope.md`
+- [X] T101 Define full table of contents in `specs/001-create-robotics-textbook/toc.md`
+- [X] T102 Define chapter template in `specs/001-create-robotics-textbook/chapter-template.md`
+- [X] T103 Define capstone project scope in `specs/001-create-robotics-textbook/capstone-scope.md`
 
 **CHECKPOINT 1 — Architecture & Scope Review**
 
