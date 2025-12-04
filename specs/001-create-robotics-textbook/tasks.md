@@ -41,9 +41,9 @@
 
 ## Phase 5: Module 4 Content (Vision-Language-Action)
 
-- [ ] T501 [US4] Write Voice-to-Action chapter in `content/module-4-voice.md`
-- [ ] T502 [US4] Write LLM Cognitive Planning chapter in `content/module-4-planning.md`
-- [ ] T503 [US4] Write Multimodal Interaction chapter in `content/module-4-vla.md`
+- [X] T501 [US4] Write Voice-to-Action chapter in `content/module-4-voice.md`
+- [X] T502 [US4] Write LLM Cognitive Planning chapter in `content/module-4-planning.md`
+- [X] T503 [US4] Write Multimodal Interaction chapter in `content/module-4-vla.md`
 
 **CHECKPOINT 5 — VLA Review**
 
