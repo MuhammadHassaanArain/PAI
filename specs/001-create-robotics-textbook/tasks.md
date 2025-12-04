@@ -25,9 +25,9 @@
 
 ## Phase 3: Module 2 Content (Gazebo & Unity Digital Twin)
 
-- [ ] T301 [US2] Write Gazebo Simulation chapter in `content/module-2-gazebo.md`
-- [ ] T302 [US2] Create URDF Robot Modeling Lab in `content/lab-urdf.md`
-- [ ] T303 [US2] Write Unity Visualization chapter in `content/module-2-unity.md`
+- [X] T301 [US2] Write Gazebo Simulation chapter in `content/module-2-gazebo.md`
+- [X] T302 [US2] Create URDF Robot Modeling Lab in `content/lab-urdf.md`
+- [X] T303 [US2] Write Unity Visualization chapter in `content/module-2-unity.md`
 
 **CHECKPOINT 3 — Digital Twin Review**
 
