@@ -203,6 +203,7 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 - `specs/<feature>/plan.md` — Architecture decisions
 - `specs/<feature>/tasks.md` — Testable tasks with cases
 - `history/prompts/` — Prompt History Records
+- `history/prompts/constitution/0001-update-project-constitution.constitution.prompt.md` - PHR for constitution update
 - `history/adr/` — Architecture Decision Records
 - `.specify/` — SpecKit Plus templates and scripts
 
