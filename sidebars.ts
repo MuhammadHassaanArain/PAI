@@ -1,0 +1,73 @@
+import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+
+const sidebars: SidebarsConfig = {
+  // By default, Docusaurus generates a sidebar from the docs folder structure
+  tutorialSidebar: [
+    {
+      type: 'category',
+      label: 'Foundations of Physical AI',
+      items: ['intro'],
+    },
+    {
+      type: 'category',
+      label: 'ROS 2 – Robotic Nervous System',
+      items: [
+        'module-1-ros2-core',
+        'lab-ros2-basic', // This is lab from chapter 4
+        // Assuming chapter 5 will be 'module-1-ros2-advanced'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Digital Twin – Gazebo & Unity',
+      items: [
+        'module-2-gazebo',
+        'lab-urdf', // This is lab from chapter 7
+        'module-2-unity',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'AI Brain – NVIDIA Isaac',
+      items: [
+        'module-3-isaac-sim',
+        'module-3-isaac-ros',
+        'lab-sim2real', // This is lab from chapter 11
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Vision-Language-Action Systems',
+      items: [
+        'module-4-voice',
+        'module-4-planning',
+        'module-4-vla',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Capstone – Autonomous Humanoid',
+      items: [
+        'capstone-architecture',
+        'capstone-implementation',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Cloud vs On-Prem Lab Setup',
+      items: [
+        // Assuming chapter 16 will be 'module-6-lab-setup'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Safety, Ethics & Deployment',
+      items: [
+        // Assuming chapter 17 will be 'module-7-safety-ethics'
+        // Assuming chapter 18 will be 'module-7-deployment'
+      ],
+    },
+  ],
+};
+
+export default sidebars;

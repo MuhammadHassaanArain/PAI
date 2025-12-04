@@ -1,28 +1,41 @@
-# Project: AI-Native Textbook on Physical AI & Humanoid Robotics
+# Website
 
-## Purpose:
-To create a production-quality, AI-native technical textbook that teaches Physical AI & Humanoid Robotics using ROS 2, Gazebo, NVIDIA Isaac, and Vision-Language-Action systems, and deploy it as an interactive learning platform with an embedded RAG chatbot.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Target Audience:
-- University-level students
-- Robotics and AI beginners
-- Engineers transitioning into robotics
-- Self-learners with Python and basic AI knowledge
+## Installation
 
-## Core Principles:
-- Technical accuracy over assumptions
-- Clarity for beginners without oversimplifying
-- Practical, hands-on learning orientation
-- Simulation-first before real hardware
-- Ethical and safe use of AI and robotics
-- AI-native learning (content + chatbot + personalization)
-- Open-source first mindset
+```bash
+yarn
+```
 
-## Technical Stack Requirements:
-- Book Framework: Docusaurus
-- Content Generation: Claude Code + Spec-Kit Plus
-- Chatbot: OpenAI Agents / ChatKit SDK
-- Backend: FastAPI
-- Database: Neon Serverless PostgreSQL
-- Vector Store: Qdrant Cloud (Free Tier)
-- Deployment: GitHub Pages or Vercel
+## Local Development
+
+```bash
+yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

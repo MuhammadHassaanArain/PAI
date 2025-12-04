@@ -2,8 +2,8 @@
 
 ## Phase 0: Project Initialization (30–45 minutes)
 
-- [ ] T001 Initialize Git repository and Docusaurus project in `/`
-- [ ] T002 Verify Spec-Kit + Claude Code integration in `/`
+- [X] T001 Initialize Git repository and Docusaurus project in `/`
+- [X] T002 Verify Spec-Kit + Claude Code Integration in /
 
 **CHECKPOINT 0 — Project Bootstrap Review**
 
