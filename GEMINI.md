@@ -196,7 +196,7 @@ If ALL true, suggest:
 
 Wait for consent; never auto-create ADRs. Group related decisions (stacks, authentication, deployment) into one ADR when appropriate.
 
-## Basic Project Structure
+## Basic Project Structure (Implementation Complete)
 
 - `.specify/memory/constitution.md` — Project principles
 - `specs/<feature>/spec.md` — Feature requirements
@@ -206,6 +206,8 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 - `history/prompts/constitution/0001-update-project-constitution.constitution.prompt.md` - PHR for constitution update
 - `history/adr/` — Architecture Decision Records
 - `.specify/` — SpecKit Plus templates and scripts
+- `content/` - Contains the generated chapters
+- `backend/` - Contains the RAG chatbot backend
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
