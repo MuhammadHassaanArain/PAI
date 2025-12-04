@@ -33,9 +33,9 @@
 
 ## Phase 4: Module 3 Content (NVIDIA Isaac AI Brain)
 
-- [ ] T401 [US3] Write Isaac Sim Fundamentals chapter in `content/module-3-isaac-sim.md`
-- [ ] T402 [US3] Write Isaac ROS Perception chapter in `content/module-3-isaac-ros.md`
-- [ ] T403 [US3] Create Sim-to-Real Transfer Lab in `content/lab-sim2real.md`
+- [X] T401 [US3] Write Isaac Sim Fundamentals chapter in `content/module-3-isaac-sim.md`
+- [X] T402 [US3] Write Isaac ROS Perception chapter in `content/module-3-isaac-ros.md`
+- [X] T403 [US3] Create Sim-to-Real Transfer Lab in `content/lab-sim2real.md`
 
 **CHECKPOINT 4 — Isaac Platform Review**
 
