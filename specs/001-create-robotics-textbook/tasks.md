@@ -17,9 +17,9 @@
 
 ## Phase 2: Module 0–1 Content Generation (Foundations + ROS 2)
 
-- [ ] T201 [US1] Write Foundations of Physical AI chapter in `content/module-0-foundations.md`
-- [ ] T202 [US1] Write ROS 2 Core Concepts chapter in `content/module-1-ros2-core.md`
-- [ ] T203 [US1] Create ROS 2 Hands-On Lab in `content/lab-ros2-basic.md`
+- [X] T201 [US1] Write Foundations of Physical AI chapter in `content/module-0-foundations.md`
+- [X] T202 [US1] Write ROS 2 Core Concepts chapter in `content/module-1-ros2-core.md`
+- [X] T203 [US1] Create ROS 2 Hands-On Lab in `content/lab-ros2-basic.md`
 
 **CHECKPOINT 2 — Foundations & ROS 2 Review**
 
