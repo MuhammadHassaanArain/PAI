@@ -1,0 +1,40 @@
+/* BotUI Base */
+.botui-container {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.botui-messages-container {
+  padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.botui-message {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.botui-message.human {
+  background: #2563eb;
+  color: white;
+  align-self: flex-end;
+}
+
+.botui-message.bot {
+  background: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+}
+
+.botui-actions-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+}

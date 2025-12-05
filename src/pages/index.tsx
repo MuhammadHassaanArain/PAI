@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type {JSX, ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -28,18 +28,18 @@ function HomepageHeader() {
     </header>
   );
 }
-
-export default function Home(): ReactNode {
+export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Description will go into a meta tag in <head />"
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <p>This is Written by me</p>
       </main>
     </Layout>
   );
 }
+
