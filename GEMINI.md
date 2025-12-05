@@ -211,3 +211,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Python 3.x (primary), C++ (optional), JavaScript/TypeScript (Docusaurus) + FastAPI, OpenAI Agent SDK, Gemini LLM, Qdrant Client, Neon Serverless PostgreSQL client libraries, Docusaurus, React (001-ai-robotics-textbook)
+- Neon Serverless PostgreSQL (users, logs, sessions, user preferences), Qdrant Cloud (vector embeddings for RAG) (001-ai-robotics-textbook)
+
+## Recent Changes
+- 001-ai-robotics-textbook: Added Python 3.x (primary), C++ (optional), JavaScript/TypeScript (Docusaurus) + FastAPI, OpenAI Agent SDK, Gemini LLM, Qdrant Client, Neon Serverless PostgreSQL client libraries, Docusaurus, React
