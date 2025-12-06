@@ -146,13 +146,6 @@ Output Requirements:
 - No default template remnants
 - Must feel like an AI-native scientific platform, not a blog
 
-Success Criteria:
-- Homepage immediately communicates advanced Physical AI focus
-- Visually feels like an MIT/DeepMind/Robotics lab site
-- Clear learning pathway for students
-- Strong credibility for researchers
-- High engagement and modern UI feel
-
 ## Response snapshot
 
 I have successfully implemented the new AI-native homepage for the Docusaurus website. I replaced the content of `src/pages/index.tsx` with a new React component structure that matches the user's detailed specifications. I also created a new CSS module at `src/pages/styles.module.css` to style the homepage with the requested dark, futuristic aesthetic.
