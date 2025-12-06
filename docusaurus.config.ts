@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: 'MuhammadHassaanArain', // Your GitHub org/user name.
   projectName: 'PAI', // Your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -34,6 +34,8 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+
 
   presets: [
     [
@@ -91,6 +93,11 @@ const config: Config = {
         {
           href: 'https://github.com/MuhammadHassaanArain/PAI',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          to: '/identity',
+          label: 'Login/Signup',
           position: 'right',
         },
       ],
