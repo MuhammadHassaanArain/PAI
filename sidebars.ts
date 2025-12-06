@@ -41,9 +41,9 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Vision-Language-Action Systems',
       items: [
-        'module4/module-4-voice',
+        'module-4-voice',
         'module4/module-4-planning',
-        'module4/module-4-vla',
+        'module-4-vla',
         'module4/module-4-vla-llm-robotics', // New module
       ],
     },

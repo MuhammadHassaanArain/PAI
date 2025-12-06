@@ -35,6 +35,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+
+
   presets: [
     [
       'classic',
@@ -91,6 +93,11 @@ const config: Config = {
         {
           href: 'https://github.com/MuhammadHassaanArain/PAI',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          to: '/identity',
+          label: 'Login/Signup',
           position: 'right',
         },
       ],
