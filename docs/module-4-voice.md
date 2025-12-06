@@ -33,9 +33,10 @@ This lab will guide you conceptually through building a voice command system. We
 Imagine a scenario where a robot can respond to "Robot, move forward" or "Robot, stop."
 
 1.  **Audio Capture Node (ROS 2 Python)**: This node would capture audio from a microphone and publish it to a ROS 2 topic.
-    ```python
-    # Conceptual: audio_capture_node.py
-    import rclpy
+
+```python
+# Conceptual: audio_capture_node.py
+import rclpy
 from rclpy.node import Node
 from std_msgs.msg import ByteMultiArray # Or a custom audio message type
 # ... (microphone interface code) ...
@@ -61,12 +62,13 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-    ```
+```
 
 2.  **Speech-to-Text Node (Python, integrating Whisper)**: This node subscribes to the audio topic, sends it to a Whisper model (local or API), and publishes the transcribed text to another ROS 2 topic.
-    ```python
-    # Conceptual: stt_node.py
-    import rclpy
+
+```python
+# Conceptual: stt_node.py
+import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String, ByteMultiArray
 # from openai import OpenAI # For API or local Whisper model
@@ -106,12 +108,13 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-    ```
+```
 
 3.  **Command Interpreter Node (ROS 2 Python)**: This node subscribes to the transcribed text, parses it, and publishes commands (e.g., to a motor control topic or a navigation action goal).
-    ```python
-    # Conceptual: command_interpreter_node.py
-    import rclpy
+
+```python
+# Conceptual: command_interpreter_node.py
+import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 # from geometry_msgs.msg import Twist # For movement commands
@@ -144,7 +147,7 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-    ```
+```
 
 ### Hardware/Cloud Alternative
 
