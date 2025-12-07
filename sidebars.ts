@@ -9,7 +9,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'ROS 2 – Robotic Nervous System',
+      label: 'Module 1: Robotic Nervous System (ROS 2)',
       items: [
         'module1/module-1-ros2-core',
         'lab-ros2-basic', // This is lab from chapter 4
@@ -19,7 +19,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Digital Twin – Gazebo & Unity',
+      label: 'Module 2: Digital Twin – Gazebo & Unity',
       items: [
         'module2/module-2-gazebo',
         'lab-urdf', // This is lab from chapter 7
@@ -29,7 +29,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'AI Brain – NVIDIA Isaac',
+      label: 'Module 3: AI Brain – NVIDIA Isaac',
       items: [
         'module3/module-3-isaac-sim',
         'module3/module-3-isaac-ros',
@@ -39,7 +39,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Vision-Language-Action Systems',
+      label: 'Module 4: Vision-Language-Action Systems',
       items: [
         'module4/module-4-voice',
         'module4/module-4-planning',

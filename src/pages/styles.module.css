@@ -218,3 +218,18 @@
     cursor: pointer;
   }
   
+/*  */
+.motionDiagram {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.motionNode {
+  padding: 18px 26px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+}

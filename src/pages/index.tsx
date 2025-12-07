@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './styles.module.css';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => (
   <section className={styles.hero}>
@@ -35,10 +36,41 @@ const WhatIsPhysicalAI = () => (
           <li>Human-robot interaction</li>
         </ul>
       </div>
+    
       <div className={styles.column}>
-        {/* Placeholder for animated diagram */}
-        <div className={styles.placeholder}>Animated Diagram</div>
+        <motion.div
+          className={styles.motionDiagram}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <motion.div
+            className={styles.motionNode}
+            animate={{ y: [0, -12, 0] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+          >
+            Sensors
+          </motion.div>
+
+          <motion.div
+            className={styles.motionNode}
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+          >
+            AI Core
+          </motion.div>
+
+          <motion.div
+            className={styles.motionNode}
+            animate={{ x: [0, 12, 0] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+          >
+            Actuators
+          </motion.div>
+        </motion.div>
       </div>
+
+
     </Section>
   );
   
@@ -106,11 +138,11 @@ const WhatIsPhysicalAI = () => (
   const WhyThisBook = () => (
     <Section title="Why This Book Is Different">
         <div className={styles.comparisonGrid}>
-            <div className={styles.gridItem}>AI-first approach ✅</div>
-            <div className={styles.gridItem}>Real-world embodiment ✅</div>
-            <div className={styles.gridItem}>Simulation-to-real transfer ✅</div>
-            <div className={styles.gridItem}>Research-backed ✅</div>
-            <div className={styles.gridItem}>Industry-aligned ✅</div>
+            <div className={styles.gridItem}>AI-first approach </div>
+            <div className={styles.gridItem}>Real-world embodiment </div>
+            <div className={styles.gridItem}>Simulation-to-real transfer </div>
+            <div className={styles.gridItem}>Research-backed </div>
+            <div className={styles.gridItem}>Industry-aligned </div>
         </div>
     </Section>
 );
@@ -128,7 +160,7 @@ const WhatIsPhysicalAI = () => (
       <div className={styles.heroButtons}>
         <a href="#" className={styles.buttonPrimary}>Start Reading</a>
         <a href="#" className={styles.buttonSecondary}>Join Research Community</a>
-        <a href="#" className={styles.buttonSecondary}>GitHub Repository</a>
+        <a href="https://github.com/MuhammadHassaanArain/PAI" className={styles.buttonSecondary}>GitHub Repository</a>
       </div>
       <div className={styles.newsletter}>
         <input type="email" placeholder="Enter your email" />
